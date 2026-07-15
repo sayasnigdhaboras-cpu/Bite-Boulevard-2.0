@@ -85,7 +85,7 @@ export default function MenuScreen({
               placeholder="Search ingredient or dish name..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full bg-surface-container-high border border-white/5 rounded-lg pl-11 pr-4 py-3 text-xs text-on-surface focus:border-primary focus:outline-none transition-all placeholder:text-white/20"
+              className="w-full bg-surface-container-high border border-white/5 rounded-lg pl-11 pr-4 py-3 text-xs text-on-surface focus:border-primary focus:outline-none transition-all placeholder:text-on-surface-variant/50"
               id="menu-search-input"
             />
             {searchQuery && (
@@ -149,7 +149,7 @@ export default function MenuScreen({
               <div 
                 key={item.id}
                 onClick={() => handleOpenItem(item)}
-                className="group bg-surface-container border border-white/5 rounded-xl overflow-hidden cursor-pointer hover:border-primary/30 transition-all duration-500 flex flex-col h-full hover:scale-[1.01] hover:bg-surface-container-high"
+                className="group bg-surface-container border border-white/5 rounded-xl overflow-hidden cursor-pointer hover:border-primary/30 transition-all duration-500 flex flex-col h-full hover:shadow-2xl hover:shadow-primary/5"
                 id={`menu-item-${item.id}`}
               >
                 {/* Product Image */}
@@ -326,7 +326,7 @@ export default function MenuScreen({
                   placeholder="e.g. Medium-rare steak preference, zero salt on garnish, allergen details..."
                   value={customizationNote}
                   onChange={(e) => setCustomizationNote(e.target.value)}
-                  className="w-full bg-surface-container-high border border-white/10 rounded-lg p-3 text-xs text-on-surface focus:border-primary focus:outline-none transition-all placeholder:text-white/20 h-20 resize-none"
+                  className="w-full bg-surface-container-high border border-white/10 rounded-lg p-3 text-xs text-on-surface focus:border-primary focus:outline-none transition-all placeholder:text-on-surface-variant/50"
                   id="drawer-customization-textarea"
                 />
               </div>
@@ -364,7 +364,7 @@ export default function MenuScreen({
               ) : (
                 <button 
                   onClick={handleAddToCart}
-                  className="w-full bg-primary text-on-primary font-sans text-xs font-bold py-4 rounded-lg hover:bg-primary-container transition-all cursor-pointer uppercase tracking-widest shadow-xl flex items-center justify-between px-6"
+                  className="w-full bg-primary text-on-primary font-sans text-xs font-bold py-4 rounded-lg hover:bg-primary-container transition-all cursor-pointer uppercase tracking-widest shadow-lg flex items-center justify-between px-4"
                   id="drawer-add-btn"
                 >
                   <span>Add to current selection</span>
