@@ -11,6 +11,7 @@ import JournalScreen from './components/JournalScreen';
 import Footer from './components/Footer';
 import { OrderItem, MenuItem } from './types';
 import { journalArticles } from './data';
+import { Chatbot } from './components/Chatbot';
 
 export default function App() {
   const [currentScreen, setCurrentScreen] = useState<'home' | 'menu' | 'book' | 'orders' | 'journal'>('home');
@@ -233,6 +234,9 @@ export default function App() {
 
       {/* Footer Branding Navigation */}
       <Footer setCurrentScreen={setCurrentScreen} setSelectedArticleId={setSelectedArticleId} />
+      
+      {/* AI Chatbot RAG Integration */}
+      <Chatbot />
     </div>
   );
 }
