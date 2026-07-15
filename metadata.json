@@ -1,0 +1,6 @@
+{
+  "name": "Bite Boulevard",
+  "description": "An exquisite culinary portal featuring nocturnal editorial precision, live-fire menu selection, intimate table reservations, and order tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

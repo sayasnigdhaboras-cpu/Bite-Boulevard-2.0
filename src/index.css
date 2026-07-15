@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-secondary-fixed-dim: #f6b8a4;
+  --color-outline: #a48b85;
+  --color-on-primary-container: #541100;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-on-tertiary: #003734;
+  --color-on-error: #690005;
+  --color-tertiary-container: #31a09a;
+  --color-tertiary-fixed-dim: #70d7d0;
+  --color-primary-fixed: #ffdbd1;
+  --color-background: #131313;
+  --color-tertiary: #70d7d0;
+  --color-on-secondary: #4c2619;
+  --color-inverse-on-surface: #313030;
+  --color-error: #ffb4ab;
+  --color-secondary: #f6b8a4;
+  --color-inverse-surface: #e5e2e1;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+  --color-surface-bright: #393939;
+  --color-primary-container: #dc7356;
+  --color-on-surface: #e5e2e1;
+  --color-primary: #ffb5a0;
+  --color-on-primary: #5e1602;
+  --color-on-secondary-container: #e3a794;
+  --color-surface-dim: #131313;
+  --color-outline-variant: #56423d;
+  --color-on-tertiary-fixed: #00201e;
+  --color-on-tertiary-container: #00302d;
+  --color-on-secondary-fixed: #331206;
+  --color-primary-fixed-dim: #ffb5a0;
+  --color-on-tertiary-fixed-variant: #00504c;
+  --color-secondary-fixed: #ffdbd0;
+  --color-on-surface-variant: #dcc1ba;
+  --color-on-primary-fixed: #3b0900;
+  --color-surface-tint: #ffb5a0;
+  --color-surface: #131313;
+  --color-surface-container-high: #2a2a2a;
+  --color-on-primary-fixed-variant: #7d2c14;
+  --color-surface-container-low: #1c1b1b;
+  --color-on-secondary-fixed-variant: #673b2d;
+  --color-inverse-primary: #9c4329;
+  --color-surface-container: #201f1f;
+  --color-tertiary-fixed: #8df4ec;
+  --color-secondary-container: #673b2d;
+  --color-on-background: #e5e2e1;
+  --color-surface-variant: #353534;
+  --color-surface-container-highest: #353534;
+
+  --font-serif: "Libre Caslon Text", Georgia, serif;
+  --font-sans: "Work Sans", system-ui, sans-serif;
+  
+  --spacing-container-max: 1120px;
+  --spacing-margin-desktop: 64px;
+  --spacing-stack-lg: 96px;
+  --spacing-gutter: 24px;
+}
+
+@layer base {
+  body {
+    background-color: #131313;
+    color: #e5e2e1;
+    font-family: var(--font-sans);
+  }
+}
+
+.editorial-shadow {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.ghost-border {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.terracotta-gradient {
+  background: linear-gradient(135deg, #c05e42 0%, #9c4329 100%);
+}
+
+/* Custom scrollbar to match dark elegant look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0e0e0e;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffb5a0;
+}
