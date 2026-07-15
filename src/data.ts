@@ -1,4 +1,7 @@
 import { MenuItem, SeatingZone, JournalArticle } from './types';
+import truffleChitarra from '@/assets/truffle_chitarra.jpg';
+import obsidianSalon from '@/assets/obsidian_salon.jpg';
+
 
 export const menuItems: MenuItem[] = [
   {
@@ -19,7 +22,7 @@ export const menuItems: MenuItem[] = [
     description: 'Heritage egg pasta spun through brass dyes, organic pasture butter, fresh grated Umbrian black winter truffles, and edible 24k gold leaf flakes.',
     price: 46,
     category: 'main',
-    imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuVJ5hjoxF41bkT66tBF9QF6HtzY9riVMmG2oNjzlCcjgjcHtfHIXwqO2KuDFyJoS_d4aiwFZaqWjtVs5uQ-nCiHwKCBmqSzAUCgYFKjryp9wQQvEYWpoABVJjW_5UBZbP1VSXeZSQHCMZf9LycUN-aJLcniroJrer91m4R5MlyBbT9RUjZD8hxiLCEcrD5oqYHO4E085eS_6hTYgGv3Q0uwlOFwdkTnqCHHnEMCBJyPqE-8dwwDE-TS-cnWZ4kZzsLah_kvxBEOn4',
+    imageUrl: truffleChitarra,
     winePairing: '2019 Domaine de la Romanée-Conti Pinot Noir',
     ingredients: ['Heritage Egg Pasta', 'Umbrian Black Truffles', 'Pasture Butter', '24k Gold Leaf', 'Aged Parmigiano-Reggiano'],
     dietaryTags: ['Vegetarian', 'Nut-Free'],
@@ -117,7 +120,7 @@ export const seatingZones: SeatingZone[] = [
     name: 'The Main Obsidian Salon',
     description: 'A dark, spacious, beautifully acoustically insulated main hall featuring plush leather circular booths and gorgeous directional spotlighting for deep intimacy.',
     capacityInfo: '2-10 Guests • Tonal Comfort',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuVJ5hjoxF41bkT66tBF9QF6HtzY9riVMmG2oNjzlCcjgjcHtfHIXwqO2KuDFyJoS_d4aiwFZaqWjtVs5uQ-nCiHwKCBmqSzAUCgYFKjryp9wQQvEYWpoABVJjW_5UBZbP1VSXeZSQHCMZf9LycUN-aJLcniroJrer91m4R5MlyBbT9RUjZD8hxiLCEcrD5oqYHO4E085eS_6hTYgGv3Q0uwlOFwdkTnqCHHnEMCBJyPqE-8dwwDE-TS-cnWZ4kZzsLah_kvxBEOn4',
+    image: obsidianSalon,
     additionalCost: 0
   }
 ];

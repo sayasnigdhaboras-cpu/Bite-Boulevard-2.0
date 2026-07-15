@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { ArrowRight, Flame, Wine, Sparkles, X } from 'lucide-react';
+import truffleChitarra from '@/assets/truffle_chitarra.jpg';
+
 
 interface BentoGridProps {
   setCurrentScreen: (screen: 'home' | 'menu' | 'book' | 'orders' | 'journal') => void;
@@ -51,7 +53,7 @@ export default function BentoGrid({ setCurrentScreen, setMenuCategoryFilter }: B
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" 
             style={{ 
-              backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuVJ5hjoxF41bkT66tBF9QF6HtzY9riVMmG2oNjzlCcjgjcHtfHIXwqO2KuDFyJoS_d4aiwFZaqWjtVs5uQ-nCiHwKCBmqSzAUCgYFKjryp9wQQvEYWpoABVJjW_5UBZbP1VSXeZSQHCMZf9LycUN-aJLcniroJrer91m4R5MlyBbT9RUjZD8hxiLCEcrD5oqYHO4E085eS_6hTYgGv3Q0uwlOFwdkTnqCHHnEMCBJyPqE-8dwwDE-TS-cnWZ4kZzsLah_kvxBEOn4')" 
+              backgroundImage: `url(${truffleChitarra})` 
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
